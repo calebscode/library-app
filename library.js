@@ -130,7 +130,7 @@ function deleteBook() {
 }
 
 function readBook() {
-    myLibrary[this.parentElement.dataset.index].isRead = true;
+    myLibrary[this.parentElement.dataset.index].isRead = !myLibrary[this.parentElement.dataset.index].isRead;
     displayLibrary();
 }
 
