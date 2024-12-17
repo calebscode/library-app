@@ -28,9 +28,55 @@ button {
     border-radius: 10px;
 }
 
+button[type="submit"] {
+    background: rgb(18, 177, 71);
+}
+
+#cancel-btn {
+    background: rgb(133, 133, 133);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
 .book-entry {
     background: #333;
     padding: 20px;
     margin: 20px 0;
     line-height: 1.5;
+}
+
+input {
+    display: block;
+}
+
+form {
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+form > * {
+    width: max(50%, 100px);
+    margin: 5px auto;
+}
+
+label {
+    font-size: 1.1rem;
+}
+
+input:not([type="checkbox"]) {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 0;
 }
