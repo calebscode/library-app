@@ -60,3 +60,25 @@ function displayLibrary() {
 }
 
 displayLibrary();
+
+// button logic
+const addBook = document.querySelector('#add-btn');
+const cancelBtn = document.querySelector('#cancel-btn');
+const submitBook = document.querySelector("#submit-book");
+const form = document.querySelector("#add-form");
+
+function openForm() {
+    form.style.visibility = "visible";
+    form.style.position = "static";
+}
+
+function closeForm() {
+    form.style.visibility = "hidden";
+    form.style.position = "absolute";
+}
+addBook.addEventListener("click", openForm);
+cancelBtn.addEventListener("click", closeForm);
+
+
+
+
